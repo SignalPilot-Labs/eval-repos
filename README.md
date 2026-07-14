@@ -14,10 +14,21 @@ The dbt projects behind the SignalPilot vs base Claude Code comparisons. One cle
 | [`quickbooks/`](quickbooks/) | Accounting | Balance sheet build. Base ignored the project's own 17-column contract and dropped the account ordering column. |
 | [`mrr/`](mrr/) | SaaS metrics | Monthly recurring revenue movements. Base overstated churn 13 percent by re-labeling customers who had already left. |
 | [`pendo/`](pendo/) | Product analytics | Guide and page daily metrics. Base shipped 0 of 4,686 rows and called the empty report correct. |
+| [`intercom/`](intercom/) | Customer support | Conversation metrics. Base built one of the two required models and quit on a reassuring "34 models passed" message. |
+| [`superstore/`](superstore/) | Retail sales | Sales facts and regional managers. Base's single-key product join multiplied the sales table 2.5x. |
+| [`retail/`](retail/) | Retail invoices | Country revenue ranking. Base shipped the buggy starter counting method unchanged, a 21x under-count. |
+| [`tpch/`](tpch/) | Wholesale supply chain | Customer lifetime value. Base admitted 1,770 return-only customers with purchase totals built from returned goods. |
+| [`reddit/`](reddit/) | Social media | Post and comment cleanup. Base overwrote 2,060 genuinely empty values and deleted 475 real comments. |
+| [`google_play/`](google_play/) | App store analytics | Daily overview report. Base aggregated the wrong upstream table, making every date wrong at identical shape. |
+| [`twilio/`](twilio/) | Communications | Messaging spend rollups. Base reported account spend with the wrong sign. |
+| [`apple_store/`](apple_store/) | App store analytics | Territory and source-type reports. Base merged three sources into the report grain, 37 rows instead of 17. |
+| [`f1/`](f1/) | Sports analytics | Driver championships. Base returned one row per champion-season, 75 rows instead of 34. |
+| [`recharge/`](recharge/) | Subscription billing | Daily customer rollups. Base's calendar reached back before customers existed, 30 phantom days. |
+| [`divvy/`](divvy/) | Mobility | Bike trip analytics. Base invented a filter that dropped one row and a loose join that admitted 5,237 trips. |
 
 ## What is in each directory
 
 - `northwind/` and `jaffle/` are the trapped warehouses exactly as the agents saw them (from the dbt-playground evals): `dbt_project.yml`, `models/`, `macros/`, seeds, and tests. The traps are in plain sight in the model SQL.
-- `airbnb/`, `asset/`, `shopify/`, `quickbooks/`, `mrr/`, and `pendo/` are official Spider 2.0-DBT task projects in their final SignalPilot-completed state, including the `technical_spec.md` the governed workflow wrote before coding.
+- All other directories are official Spider 2.0-DBT task projects in their final SignalPilot-completed state, including the `technical_spec.md` the governed workflow wrote before coding.
 
 Data files, credentials, and harness artifacts are excluded; these are the model layers for reading, not runnable snapshots of the warehouses.
