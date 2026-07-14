@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fct_granite__experiment_results
+    description: One row per experiment and variant.
+    columns:
+      - name: variant
+        tests: [not_null]
+
+  - name: fct_granite__daily_metrics
+    description: One row per date and experiment.
+
+  - name: dim_granite__experiments
+    description: One row per experiment.
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: dim_granite__subjects
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: fct_granite__surface_engagement
+    description: Exposure activity by game surface.
+
+  - name: fct_granite__iap_summary
+    description: Experiment IAP rollup.

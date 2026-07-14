@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: Verbatim SDK/export documents, one JSON row per enrollment document.
+    tables:
+      - name: client_blob
+        columns:
+          - name: source_client
+          - name: load_id
+          - name: blob

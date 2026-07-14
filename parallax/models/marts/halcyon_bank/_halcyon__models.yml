@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fct_halcyon__experiment_results
+    description: One row per experiment and variant.
+    columns:
+      - name: variant
+        tests: [not_null]
+
+  - name: fct_halcyon__daily_metrics
+    description: One row per date and experiment.
+
+  - name: dim_halcyon__experiments
+    description: One row per experiment.
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: fct_halcyon__funding_by_currency
+    columns:
+      - name: ccy
+        tests: [unique, not_null]
+
+  - name: fct_halcyon__revenue_legacy
+    description: Experiment deposit rollup.

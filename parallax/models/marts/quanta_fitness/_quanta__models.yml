@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_quanta__experiment_results
+    description: One row per experiment and variant.
+    columns:
+      - name: variant
+        tests: [not_null]
+
+  - name: fct_quanta__daily_metrics
+    description: One row per date and experiment.
+
+  - name: dim_quanta__experiments
+    description: One row per experiment.
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: fct_quanta__platform_metrics
+    description: One row per platform and experiment.
+
+  - name: fct_quanta__engagement_legacy
+    description: Engagement rollup per experiment and variant.

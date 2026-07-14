@@ -1,0 +1,8 @@
+raw_value,platform
+ios,ios
+android,android
+web,web
+iPhone,ios
+Android,android
+Chrome,web
+headless,web

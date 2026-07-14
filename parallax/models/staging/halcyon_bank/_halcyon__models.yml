@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: stg_halcyon__frames
+    description: One row per frame in the event stream.
+    columns:
+      - name: stream_id
+        tests: [not_null]
+      - name: kind
+        tests: [not_null]
+
+  - name: stg_halcyon__enrollments
+    description: One row per enrollment.
+    columns:
+      - name: enrollment_id
+        tests: [unique, not_null]
+      - name: subject_key
+        tests: [not_null]
+      - name: variant
+        tests: [not_null]
+
+  - name: stg_halcyon__subjects
+    description: One row per subject.
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: stg_halcyon__exposures
+    description: One row per exposure frame.
+    columns:
+      - name: exposure_id
+        tests: [unique, not_null]
+      - name: enrollment_id
+        tests: [not_null]
+
+  - name: stg_halcyon__metric_events
+    description: One row per metric frame.
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: metric
+        tests: [not_null]
+
+  - name: stg_halcyon__annotations
+
+  - name: stg_halcyon__surfaces

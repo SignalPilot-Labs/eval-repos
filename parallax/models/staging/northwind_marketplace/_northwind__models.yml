@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_northwind__enrollments
+    description: One row per enrollment document.
+    columns:
+      - name: enrollment_id
+        tests: [unique, not_null]
+      - name: subject_key
+        tests: [not_null]
+      - name: variant
+        tests: [not_null]
+
+  - name: stg_northwind__subjects
+    description: One row per subject.
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: stg_northwind__exposures
+    description: One row per exposure impression.
+    columns:
+      - name: exposure_id
+        tests: [unique, not_null]
+      - name: enrollment_id
+        tests: [not_null]
+
+  - name: stg_northwind__metric_events
+    description: One row per metric event.
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: metric
+        tests: [not_null]
+
+  - name: stg_northwind__experiments
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: stg_northwind__experiment_variants
+    description: Distinct variant labels per experiment.
+
+  - name: stg_northwind_surfaces

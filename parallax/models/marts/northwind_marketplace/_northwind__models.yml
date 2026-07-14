@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_northwind__experiment_results
+    description: One row per experiment and variant.
+    columns:
+      - name: variant
+        tests: [not_null]
+
+  - name: fct_northwind__daily_metrics
+    description: One row per date and experiment.
+
+  - name: dim_northwind__experiments
+    description: One row per experiment.
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: dim_northwind__subjects
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: fct_northwind__revenue_by_region
+
+  - name: fct_northwind__revenue_legacy
+    description: Experiment revenue rollup.

@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: int_all__experiments
+    description: All clients' experiments, conformed.
+  - name: int_all__enrollments
+    description: All clients' enrollments, conformed.
+    columns:
+      - name: enrollment_id
+        tests: [not_null]
+  - name: int_all__exposures
+  - name: int_all__metric_events
+  - name: int_org__enrollments_canonical
+    description: Enrollments with the canonical experiment key resolved.
+  - name: int_org__experiments_canonical
+  - name: dim_org_experiments
+    description: Experiment dimension across all clients.
+  - name: fct_org_experiment_results
+    description: One row per client, experiment, and variant.
+    columns:
+      - name: variant
+        tests:
+          - accepted_values:
+              values: ['control', 'variant_1', 'variant_2']
+  - name: fct_org_conversion_lift
+  - name: fct_org_revenue_by_client
+    description: One row per client.
+  - name: fct_org_data_quality
+  - name: fct_org_sdk_adoption
+  - name: rpt_experiment_scorecard
+    description: One row per client experiment.
+  - name: rpt_platform_overview
+    description: Weekly rollup by client.
+  - name: rpt_weekly_kpis_v1

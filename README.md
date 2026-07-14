@@ -8,6 +8,7 @@ The dbt projects behind the SignalPilot vs base Claude Code comparisons. One cle
 |---|---|---|
 | [`northwind/`](northwind/) | Healthcare revenue cycle | ~190-model RCM warehouse serving nine health-system clients, each delivering a different JSON dialect. Contains a hidden fan-before-aggregate in every client's `int_<client>__claim_financials`: row counts and uniqueness pass, but charge sums are silently multiplied ~4.5x. Base Claude Code reported $267B org-wide charges; the real figure is $71B. |
 | [`jaffle/`](jaffle/) | Retail | The canonical dbt-labs Jaffle Shop (order_items / products / supplies edition) with a trapped `marts/orders.sql`: a perishable-supplies join inflates revenue ~2.74x while every grain check passes. Base reported $2,090,694 total revenue; the real figure is $763,290. |
+| [`parallax/`](parallax/) | Experimentation platform | 183-model feature-flag / A/B testing warehouse serving nine client companies, each shipping a different JSON dialect. Hides raw-recoverable silent-shrink traps: a filter, dedup, or schema omission quietly drops rows below the mart while the raw landing table holds the full population. Base reported 230,760 logged impressions for one client; the real count is 573,648. |
 | [`airbnb/`](airbnb/) | Travel marketplace | Reviews and listings pipeline. Base produced 11,135 rows for a 3-row month-over-month summary. |
 | [`asset/`](asset/) | Capital markets | Stock quotes and positions. Base collapsed 3,430 price records into 15 and valued 1 position instead of 3,185. |
 | [`shopify/`](shopify/) | E-commerce | Shop performance reporting. Base shipped a daily table with 2 of 2,077 days. |
@@ -28,7 +29,7 @@ The dbt projects behind the SignalPilot vs base Claude Code comparisons. One cle
 
 ## What is in each directory
 
-- `northwind/` and `jaffle/` are the trapped warehouses exactly as the agents saw them (from the dbt-playground evals): `dbt_project.yml`, `models/`, `macros/`, seeds, and tests. The traps are in plain sight in the model SQL.
+- `northwind/`, `jaffle/`, and `parallax/` are the trapped warehouses exactly as the agents saw them (from the dbt-playground evals): `dbt_project.yml`, `models/`, `macros/`, seeds, and tests. The traps are in plain sight in the model SQL.
 - All other directories are official Spider 2.0-DBT task projects in their final SignalPilot-completed state, including the `technical_spec.md` the governed workflow wrote before coding.
 
 Data files, credentials, and harness artifacts are excluded; these are the model layers for reading, not runnable snapshots of the warehouses.

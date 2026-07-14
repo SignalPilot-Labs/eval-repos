@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fct_meridian__experiment_results
+    description: One row per experiment and variant.
+    columns:
+      - name: variant
+        tests: [not_null]
+
+  - name: fct_meridian__daily_metrics
+    description: One row per date and experiment.
+
+  - name: dim_meridian__experiments
+    description: One row per experiment.
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: fct_meridian__event_timing
+    description: Outcome volume by days since bucketing.
+
+  - name: fct_meridian__engagement_by_placement
+
+  - name: fct_meridian__conversions_legacy
+    description: Experiment conversion rollup.

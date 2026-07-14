@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_ember__enrollments
+    description: One row per enrollment.
+    columns:
+      - name: enrollment_id
+        tests: [unique, not_null]
+      - name: subject_key
+        tests: [not_null]
+      - name: bucket
+        tests: [not_null]
+
+  - name: stg_ember__subjects
+    description: One row per subject.
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: stg_ember__exposures
+    description: One row per impression.
+    columns:
+      - name: exposure_id
+        tests: [unique, not_null]
+      - name: enrollment_id
+        tests: [not_null]
+
+  - name: stg_ember__metric_events
+    description: One row per outcome event.
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: kind
+        tests: [not_null]
+
+  - name: stg_ember__revisions
+    description: One row per submitted document.
+    columns:
+      - name: enrollment_id
+        tests: [not_null]
+
+  - name: stg_ember__sessions
+    columns:
+      - name: session_id
+        tests: [unique, not_null]
+
+  - name: stg_ember_placements

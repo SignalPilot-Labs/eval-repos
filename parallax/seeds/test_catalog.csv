@@ -1,0 +1,109 @@
+canonical_key,client_id,experiment_name,randomization_unit,status,start_date,end_date,primary_metric,variant_count
+checkout_cta_02,northwind_marketplace,Checkout Cta 02,user,completed,2025-11-24,2026-02-15,purchase,2
+pdp_gallery_v3,northwind_marketplace,Pdp Gallery V3,user,completed,2025-12-25,2026-03-03,purchase,2
+free_shipping_banner,northwind_marketplace,Free Shipping Banner,user,completed,2025-09-24,2025-12-18,purchase,2
+search_ranker_ab,northwind_marketplace,Search Ranker Ab,user,running,2025-09-06,,purchase,2
+cart_upsell_widget,northwind_marketplace,Cart Upsell Widget,user,running,2025-09-04,,purchase,3
+onboarding_email_seq,northwind_marketplace,Onboarding Email Seq,user,completed,2025-10-11,2025-11-25,purchase,3
+seller_badge_test,northwind_marketplace,Seller Badge Test,user,completed,2025-10-24,2025-12-22,purchase,3
+homepage_hero_04,northwind_marketplace,Homepage Hero 04,user,completed,2026-01-13,2026-03-01,purchase,3
+price_anchor_strike,northwind_marketplace,Price Anchor Strike,user,completed,2025-09-25,2025-11-13,purchase,2
+review_snippet_pos,northwind_marketplace,Review Snippet Pos,user,completed,2025-10-31,2025-11-21,purchase,2
+loyalty_nudge_01,northwind_marketplace,Loyalty Nudge 01,user,completed,2025-11-23,2026-02-01,purchase,3
+mobile_sticky_atc,northwind_marketplace,Mobile Sticky Atc,user,running,2026-01-26,,purchase,3
+pricing_page_3col,drift_labs,Pricing Page 3Col,user,completed,2026-02-10,2026-04-19,upgrade,3
+trial_length_14v30,drift_labs,Trial Length 14V30,user,completed,2025-11-07,2025-12-28,upgrade,2
+docs_inline_search,drift_labs,Docs Inline Search,user,completed,2026-01-26,2026-03-26,upgrade,3
+cli_onboard_flow,drift_labs,Cli Onboard Flow,user,completed,2026-02-09,2026-03-10,upgrade,2
+editor_dark_default,drift_labs,Editor Dark Default,user,completed,2026-02-11,2026-05-09,upgrade,2
+billing_annual_nudge,drift_labs,Billing Annual Nudge,session,completed,2025-09-23,2025-11-02,upgrade,3
+signup_sso_first,drift_labs,Signup Sso First,user,completed,2025-09-16,2025-11-24,upgrade,3
+changelog_digest,drift_labs,Changelog Digest,session,completed,2025-12-18,2026-03-13,upgrade,2
+quota_meter_ui,drift_labs,Quota Meter Ui,user,completed,2025-10-01,2025-11-25,upgrade,3
+team_invite_prompt,drift_labs,Team Invite Prompt,user,completed,2026-01-18,2026-02-28,upgrade,3
+sandbox_autoprov,drift_labs,Sandbox Autoprov,user,running,2025-09-16,,upgrade,3
+paywall_softgate,drift_labs,Paywall Softgate,user,completed,2025-11-29,2026-01-14,upgrade,3
+starter_pack_price,granite_gaming,Starter Pack Price,user,completed,2025-12-28,2026-02-25,purchase,2
+daily_reward_track,granite_gaming,Daily Reward Track,session,completed,2025-11-25,2026-01-10,purchase,2
+battle_pass_promo,granite_gaming,Battle Pass Promo,user,completed,2025-11-18,2025-12-20,purchase,3
+tutorial_skip_opt,granite_gaming,Tutorial Skip Opt,user,completed,2025-11-04,2026-01-11,purchase,2
+shop_layout_grid,granite_gaming,Shop Layout Grid,user,completed,2025-09-20,2025-10-18,purchase,3
+gacha_pity_meter,granite_gaming,Gacha Pity Meter,user,completed,2025-10-21,2025-11-12,purchase,2
+season_end_event,granite_gaming,Season End Event,user,completed,2026-02-16,2026-05-11,purchase,2
+push_reengage_copy,granite_gaming,Push Reengage Copy,user,completed,2025-10-23,2026-01-07,purchase,3
+ad_frequency_cap,granite_gaming,Ad Frequency Cap,user,completed,2025-10-29,2025-12-18,purchase,2
+clan_invite_flow,granite_gaming,Clan Invite Flow,user,completed,2025-10-02,2025-12-30,purchase,3
+hard_currency_sale,granite_gaming,Hard Currency Sale,user,completed,2026-01-15,2026-04-07,purchase,3
+level_gate_soften,granite_gaming,Level Gate Soften,session,completed,2025-11-17,2025-12-20,purchase,2
+autoplay_preview,helios_media,Autoplay Preview,user,completed,2026-01-26,2026-04-17,purchase,3
+row_ranker_v2,helios_media,Row Ranker V2,user,completed,2025-10-02,2025-12-20,purchase,2
+annual_plan_upsell,helios_media,Annual Plan Upsell,user,completed,2025-11-10,2026-01-04,purchase,2
+profile_onboard_v3,helios_media,Profile Onboard V3,user,completed,2026-01-14,2026-03-25,purchase,2
+skip_intro_button,helios_media,Skip Intro Button,user,completed,2026-01-24,2026-03-06,purchase,2
+thumbnail_ab_faces,helios_media,Thumbnail Ab Faces,user,completed,2025-12-23,2026-02-27,purchase,2
+continue_watch_row,helios_media,Continue Watch Row,user,completed,2025-09-16,2025-10-16,purchase,2
+signup_paywall_copy,helios_media,Signup Paywall Copy,user,running,2026-02-06,,purchase,2
+downloads_nudge,helios_media,Downloads Nudge,session,completed,2025-12-23,2026-01-14,purchase,2
+kids_profile_prompt,helios_media,Kids Profile Prompt,session,completed,2025-10-04,2025-12-22,purchase,3
+hero_trailer_mute,helios_media,Hero Trailer Mute,user,completed,2025-09-03,2025-11-10,purchase,2
+rating_prompt_time,helios_media,Rating Prompt Time,user,running,2025-09-29,,purchase,2
+pdp_video_first,ember_commerce,Pdp Video First,session,completed,2025-12-14,2026-01-18,purchase,2
+cart_progress_bar,ember_commerce,Cart Progress Bar,user,completed,2025-11-07,2025-11-29,purchase,3
+exit_intent_offer,ember_commerce,Exit Intent Offer,session,completed,2025-12-05,2026-01-28,purchase,2
+bundle_builder_v1,ember_commerce,Bundle Builder V1,user,completed,2025-10-17,2025-11-13,purchase,3
+reviews_photo_first,ember_commerce,Reviews Photo First,user,completed,2025-10-16,2025-11-22,purchase,2
+size_guide_modal,ember_commerce,Size Guide Modal,user,running,2026-01-25,,purchase,2
+checkout_1page,ember_commerce,Checkout 1Page,user,running,2026-02-05,,purchase,2
+giftwrap_upsell,ember_commerce,Giftwrap Upsell,user,running,2025-11-06,,purchase,2
+backin_stock_alert,ember_commerce,Backin Stock Alert,user,completed,2026-02-11,2026-03-17,purchase,3
+free_returns_badge,ember_commerce,Free Returns Badge,user,completed,2025-09-22,2025-12-10,purchase,2
+quickadd_carousel,ember_commerce,Quickadd Carousel,user,completed,2025-10-08,2025-12-08,purchase,2
+email_capture_spin,ember_commerce,Email Capture Spin,user,completed,2025-12-30,2026-03-13,purchase,3
+paywall_after_class,meridian_wellness,Paywall After Class,user,completed,2026-01-07,2026-03-31,purchase,2
+streak_freeze_offer,meridian_wellness,Streak Freeze Offer,user,completed,2025-09-13,2025-10-11,purchase,3
+coach_intro_video,meridian_wellness,Coach Intro Video,user,completed,2025-09-27,2025-12-20,purchase,3
+plan_quiz_v2,meridian_wellness,Plan Quiz V2,session,completed,2025-09-05,2025-11-30,purchase,2
+annual_discount_40,meridian_wellness,Annual Discount 40,session,completed,2025-10-16,2025-12-09,purchase,2
+workout_reminder_t,meridian_wellness,Workout Reminder T,user,completed,2025-11-22,2026-01-26,purchase,3
+social_share_card,meridian_wellness,Social Share Card,user,running,2026-02-02,,purchase,3
+trial_ext_offer,meridian_wellness,Trial Ext Offer,user,running,2025-10-21,,purchase,2
+onboard_goal_pick,meridian_wellness,Onboard Goal Pick,user,completed,2025-09-03,2025-10-14,purchase,3
+premium_tab_badge,meridian_wellness,Premium Tab Badge,user,running,2026-02-26,,purchase,2
+winback_email_ab,meridian_wellness,Winback Email Ab,user,completed,2025-09-28,2025-10-24,purchase,3
+class_filter_ui,meridian_wellness,Class Filter Ui,user,completed,2026-01-06,2026-02-02,purchase,3
+pairing_flow_v2,quanta_fitness,Pairing Flow V2,user,completed,2026-02-23,2026-03-22,purchase,2
+premium_trial_7d,quanta_fitness,Premium Trial 7D,user,completed,2026-01-22,2026-03-02,purchase,3
+challenge_invite,quanta_fitness,Challenge Invite,session,completed,2025-11-29,2026-01-24,purchase,3
+goal_streak_ring,quanta_fitness,Goal Streak Ring,session,completed,2026-01-07,2026-02-07,purchase,2
+iap_bundle_offer,quanta_fitness,Iap Bundle Offer,user,completed,2026-01-10,2026-03-24,purchase,3
+watchface_gallery,quanta_fitness,Watchface Gallery,user,completed,2025-11-22,2026-01-16,purchase,2
+sleep_report_tease,quanta_fitness,Sleep Report Tease,user,running,2025-11-09,,purchase,3
+buddy_nudge_push,quanta_fitness,Buddy Nudge Push,user,completed,2025-11-08,2025-12-19,purchase,2
+upgrade_paywall_v3,quanta_fitness,Upgrade Paywall V3,user,completed,2025-11-30,2026-02-24,purchase,2
+weekly_recap_card,quanta_fitness,Weekly Recap Card,session,completed,2025-10-24,2025-12-07,purchase,2
+badge_share_flow,quanta_fitness,Badge Share Flow,user,running,2025-09-15,,purchase,2
+hr_zone_educate,quanta_fitness,Hr Zone Educate,user,completed,2025-09-13,2025-12-02,purchase,2
+kyc_flow_shortform,halcyon_bank,Kyc Flow Shortform,user,completed,2025-11-23,2026-02-06,purchase,2
+funding_ach_first,halcyon_bank,Funding Ach First,user,completed,2026-01-31,2026-04-02,purchase,2
+card_activate_push,halcyon_bank,Card Activate Push,user,completed,2025-10-10,2025-12-30,purchase,2
+roundup_optin,halcyon_bank,Roundup Optin,user,completed,2025-12-09,2026-02-26,purchase,2
+apy_banner_test,halcyon_bank,Apy Banner Test,user,completed,2025-11-10,2026-01-06,purchase,2
+referral_bonus_amt,halcyon_bank,Referral Bonus Amt,user,completed,2025-10-23,2025-12-04,purchase,2
+statement_redesign,halcyon_bank,Statement Redesign,user,completed,2026-01-08,2026-03-18,purchase,2
+overdraft_optin_v2,halcyon_bank,Overdraft Optin V2,user,completed,2026-02-24,2026-04-09,purchase,3
+direct_dep_nudge,halcyon_bank,Direct Dep Nudge,session,completed,2025-12-26,2026-01-20,purchase,2
+savings_goal_ui,halcyon_bank,Savings Goal Ui,user,completed,2025-09-08,2025-11-07,purchase,2
+credit_score_tab,halcyon_bank,Credit Score Tab,user,completed,2025-09-02,2025-11-26,purchase,2
+app_review_prompt,halcyon_bank,App Review Prompt,user,completed,2026-02-12,2026-04-25,purchase,2
+srp_map_toggle,fjord_travel,Srp Map Toggle,visitor,completed,2025-09-29,2025-11-29,booking,3
+urgency_rooms_left,fjord_travel,Urgency Rooms Left,visitor,completed,2025-12-28,2026-03-22,booking,3
+bundle_flight_hotel,fjord_travel,Bundle Flight Hotel,visitor,completed,2026-01-07,2026-03-18,booking,3
+review_score_badge,fjord_travel,Review Score Badge,visitor,running,2026-02-12,,booking,3
+cancel_policy_copy,fjord_travel,Cancel Policy Copy,visitor,completed,2025-10-01,2025-12-29,booking,2
+date_flex_calendar,fjord_travel,Date Flex Calendar,visitor,running,2026-02-21,,booking,3
+loyalty_tier_tease,fjord_travel,Loyalty Tier Tease,visitor,completed,2026-01-18,2026-02-21,booking,2
+payment_klarna,fjord_travel,Payment Klarna,visitor,completed,2026-02-15,2026-04-18,booking,3
+photo_carousel_v2,fjord_travel,Photo Carousel V2,visitor,completed,2026-02-05,2026-04-08,booking,2
+mobile_filter_sheet,fjord_travel,Mobile Filter Sheet,visitor,completed,2026-01-28,2026-04-02,booking,2
+cross_sell_activities,fjord_travel,Cross Sell Activities,visitor,completed,2026-01-22,2026-02-26,booking,3
+price_alert_optin,fjord_travel,Price Alert Optin,visitor,completed,2026-01-09,2026-03-29,booking,3

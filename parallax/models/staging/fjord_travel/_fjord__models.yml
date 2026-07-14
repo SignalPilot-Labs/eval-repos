@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_fjord__enrollments
+    description: One row per export batch.
+    columns:
+      - name: enrollment_id
+        tests: [unique, not_null]
+      - name: subject_key
+        tests: [not_null]
+      - name: cell
+        tests: [not_null]
+
+  - name: stg_fjord__subjects
+    description: One row per user ref.
+    columns:
+      - name: subject_key
+        tests: [unique, not_null]
+
+  - name: stg_fjord__exposures
+    description: One row per impression.
+    columns:
+      - name: exposure_id
+        tests: [unique, not_null]
+      - name: enrollment_id
+        tests: [not_null]
+
+  - name: stg_fjord__metric_events
+    description: One row per hit.
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: metric
+        tests: [not_null]
+
+  - name: stg_fjord__metric_catalog
+    description: Metrics listed on each batch.
+
+  - name: stg_fjord__experiments
+    columns:
+      - name: experiment_key
+        tests: [unique, not_null]
+
+  - name: stg_fjord_markets
